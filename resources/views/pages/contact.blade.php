@@ -6,7 +6,8 @@
     <p class="lead">Use the form to submit your questions.<br> You can follow us on Facebook and Twitter for the up-to-date information.</p>
 
     <form action="/contact" method="post">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+
+        {{ csrf_field() }}
 
         <div class="form-group">
             <label for="email">Email address</label>

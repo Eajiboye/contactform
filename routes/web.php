@@ -24,6 +24,10 @@ Route::get('/contact', function () {
 });
 
 Route::post('/contact', function () {
-  dd(request);
+
+$data = request ()->all();
+
+    echo "email:" . $data['email'] . '<br>';
+    echo "Body:" . $data['body'];
 
 });
